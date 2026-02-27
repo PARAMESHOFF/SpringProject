@@ -9,19 +9,19 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Springproject1Application {
 
 	public static void main(String[] args) {
-//	ApplicationContext ac = SpringApplication.run(Springproject1Application.class, args);
+	ApplicationContext ac = SpringApplication.run(Springproject1Application.class, args);
 //	
 //	Student st =  ac.getBean(Student.class);
 //	
 //	System.out.println(st.getRollno());
 //	System.out.println(st.getName());
 		
-		ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContex.xml");
+//		ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContex.xml");
 		
-		Student s = (Student) ac.getBean("student");
+		Student1 s = (Student1) ac.getBean("student1");
 		
-		System.out.println(s.getRollno());
-		System.out.println(s.getName());
+		s.study();
+		s.deviceUse();
 		
 	}
 }
