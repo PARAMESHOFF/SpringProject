@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+       
+       <bean id="student" class="com.kodnest.Springproject1.Student">
+       
+       	<property name="rollno" value="21"></property>
+       	<property name="name" value="paramesh"></property>
+       </bean>
+       
+</beans>

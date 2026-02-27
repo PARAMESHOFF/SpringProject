@@ -1,8 +1,8 @@
 package com.kodnest.Springproject1;
 
-import org.springframework.stereotype.Component;
 
-@Component
+
+
 public class Student {
 	int rollno = 28;
 	String name = "parmesh";
