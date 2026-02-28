@@ -18,10 +18,18 @@ public class Springproject1Application {
 		
 //		ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContex.xml");
 		
-		Student1 s = (Student1) ac.getBean("student1");
-		
-		s.study();
-		s.deviceUse();
+//		Student1 s = (Student1) ac.getBean("student1");
+//		
+//		s.study();
+//		s.deviceUse();
+	
+	
+	Employee employee = ac.getBean(Employee.class);
+	
+	employee.work();
+	employee.empDetails();
+	
+	
 		
 	}
 }
